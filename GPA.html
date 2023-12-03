@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/GPA.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <script src="js/common.js"></script>
+    <script src="js/GPA.js"></script>
+</head>
+
+<body>
+    <div class="root">
+        <!-- INSET HEADER FILE HERE -->
+        <header></header>
+        <div class="content">
+            <div class="container">
+                <h1>Find your GPA!</h1>
+                <p> Enter the number of credit hours for each course, and the letter grade for each of them. At least 2
+                    courses should be entered.</p>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h4>Creadit Hours</h4>
+                        </td>
+                        <td>
+                            <h4>Grade</h>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Course 1:</td>
+                        <td><input type="text" name="courseHourse1" id="courseHourse1"></td>
+                        <td>
+                            <select name="grade1" id="grade1" style="width: 65%;">
+                                <option value="null">None</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Course 2:</td>
+                        <td><input type="text" name="courseHourse2" id="courseHourse2"></td>
+                        <td>
+                            <select name="grade2" id="grade2" style="width: 65%;">
+                                <option value="null">None</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Course 3:</td>
+                        <td><input type="text" name="courseHourse3" id="courseHourse3"></td>
+                        <td>
+                            <select name="grade3" id="grade3" style="width: 65%;">
+                                <option value="null">None</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Course 4:</td>
+                        <td><input type="text" name="courseHourse4" id="courseHourse4"></td>
+                        <td>
+                            <select name="grade4" id="grade4" style="width: 65%;">
+                                <option value="null">None</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Course 5:</td>
+                        <td><input type="text" name="courseHourse5" id="courseHourse5"></td>
+                        <td>
+                            <select name="grade5" id="grade5" style="width: 65%;">
+                                <option value="null">None</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Avg GPA:</td>
+                        <td><input disabled type="text" name="grade" id="grade"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input class="buttons" type="submit" name="submit" id="submit" value="submit"
+                                onclick="calculateGpaScore()">
+                        </td>
+                        <td>
+                            <input class="buttons" type="reset" name="reset" id="reset" onclick="resetFormData()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- INSET FOOTER FILE HERE -->
+        <footer></footer>
+    </div>
+</body>
+
+</html>

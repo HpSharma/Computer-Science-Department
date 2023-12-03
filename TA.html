@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/TA.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="root">
+        <!-- INSET HEADER FILE HERE -->
+        <header></header>
+        <div class="content">
+            <div class="form">
+                <h1>Teaching Assistant Application Form</h1>
+                <h2>Applicant Information</h2>
+                <form name="ta-form" action="survey_data.html" method="get">
+                    <table>
+                        <tr>
+                            <td><label for="firstname">First name:</label></td>
+                            <td><input type="text" name="firstname" id="firstname" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lastname">Last name:</label></td>
+                            <td><input type="text" name="lastname" id="lastname"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="studentid">Student ID:</label></td>
+                            <td><input type="text" name="studentid" id="studentid" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender">Gender:</label></td>
+                            <td style="padding-left: 10px;">
+                                M <input type="checkbox" name="gender" value="male" onclick="handleCheckbox(this)">
+                                F <input type="checkbox" name="gender" value="female" onclick="handleCheckbox(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="gpa">GPA:</label></td>
+                            <td><input type="text" name="gpa" id="gpa" required></td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding-top: 10px;">
+                                <label for="comments">Comments:</label>
+                            </td>
+                            <td><textarea name="" id="" cols="23" rows="5" name="comments" id="comments"></textarea>
+                            </td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td colspan="2">
+                                <h2>Thank you for completing the application!</h2>
+                            </td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td colspan="2">
+                                <input class="buttons" type="submit" name="button" id="button" value="Submit">
+                                <input class="buttons" type="reset" name="reset" id="reset">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <!-- INSET FOOTER FILE HERE -->
+        <footer></footer>
+    </div>
+</body>
+<script>
+    function handleCheckbox(clickedCheckbox) {
+        const checkboxes = document.getElementsByName('gender');
+        checkboxes.forEach(checkbox => {
+            if (checkbox !== clickedCheckbox) {
+                checkbox.checked = false;
+            }
+        });
+    }
+</script>
+
+</html>

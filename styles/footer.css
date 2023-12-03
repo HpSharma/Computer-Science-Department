@@ -1,0 +1,26 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e45303;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+footer .left {
+  line-height: 24px;
+}
+
+footer .right {
+  display: flex;
+  gap: 10px;
+}
+
+footer .right a {
+  display: contents
+}
+
+footer .right img {
+  height: 28px;
+  width: auto;
+  border-radius: 5px;
+}
